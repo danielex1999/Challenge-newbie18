@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+}
+
+body {
+  background-color: var(--Cream);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 38%;
+  height: 55%;
+  display: flex;
+}
+
+.image {
+  width: 45%;
+  height: 100%;
+  border-radius: 20px 0px 0 20px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0px 0 20px;
+}
+
+.text {
+  width: 55%;
+  background: var(--White);
+  border-radius: 0 20px 20px 0;
+  padding: 30px;
+}
+.text-type {
+color: var(--Dark-grayish-blue);
+font-family: 'Montserrat', sans-serif;
+margin-bottom: 20px;
+font-weight: 500;
+letter-spacing: 4px;
+}
+.text h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    width: 90%;
+    font-size: 40px;
+    color: var(--Very-dark-blue);
+    margin-bottom: 20px;
+}
+
+.text .description{
+    color: var(--Dark-grayish-blue);
+    font-size: 19px;
+    width: 79%;
+}
+.price{
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.price h2{
+color: var(--Dark-cyan);
+font-family: 'Fraunces', serif;
+font-size: 34px;
+margin-right: 20px;
+}
+
+.price h3{
+  color: var(--Dark-grayish-blue);
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: line-through;
+  }
+
+  button{
+    margin-top: 20px;
+    width: 90%;
+    background: var(--Dark-cyan);
+    color: var(--White);
+    height: 60px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  button img{
+    margin-right: 10px;
+  }
+  button:hover{
+    background: #1A4031;
+  }
+
+  /*Formato movil*/
+  @media screen and (max-width: 375px) {
+    section{
+      width: 90%;
+      height: 90%;
+      flex-direction: column;
+    }
+    .image{
+      width: 100%;
+      height: 40%;
+    }
+    .image img {
+      background: url(/images/image-product-mobile.jpg);
+      border-radius: 20px 20px 0 0;
+    }
+    .text{
+      width: 100%;
+      height: 60%;
+      border-radius: 0 0 20px 20px;
+      padding: 20px;
+    }
+    .text h1{
+      margin-top: 10px;
+      font-size: 26px;
+      margin-bottom: 0;
+    }
+    .text-type{
+      font-size: 12px;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+    .text .description{
+      margin-top: 10px;
+      font-size: 16px;
+      width: 80%;
+    }
+    .price{
+      margin-top: 30px;
+    }
+    .price h2{
+      font-size: 26px;
+      margin-right: 10px;
+    }
+    .price h3{
+      font-size: 12px;
+    } 
+    button{
+      margin-top: 20px;
+      height: 50px;
+      font-size: 12px;
+      width: 100%;
+
+    }
+  }
